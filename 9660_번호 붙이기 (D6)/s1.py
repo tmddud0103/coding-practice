@@ -28,7 +28,8 @@ def perm(a):
                 j.insert(0, i)
                 if j not in result:
                     result.append(j)
-        return result
+    print(result)
+    return result
 
 test_case = int(input())
 
