@@ -11,7 +11,6 @@ def search(n):
         search(2*n)
     return 0
 
-
 TC = int(input())
 for tc in range(1, TC+1):
     N = int(input())

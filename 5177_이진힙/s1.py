@@ -1,8 +1,6 @@
 import sys
 sys.stdin = open('input.txt')
 
-
-
 TC = int(input())
 for tc in range(1, TC+1):
     N = int(input())
@@ -14,8 +12,8 @@ for tc in range(1, TC+1):
         else:
             tree[i] = hip_tree[i-1]
             if tree[i//2] > tree[i]:
-                k=i
-                while k!=1 and tree[k//2] > tree[k]:
+                k = i
+                while k != 1 and tree[k//2] > tree[k]:
                     tree[k // 2], tree[k] = tree[k], tree[k // 2]
                     k = k//2
     num_last_node = len(tree) - 1
