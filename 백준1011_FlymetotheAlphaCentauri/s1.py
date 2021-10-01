@@ -10,10 +10,11 @@ for tc in range(TC):
         i += 1
     total = i**2
     cnt = 2*i-1
-    while z-total >= i:
-        total += i
+    remain = z-total
+    while remain-i >= 0:
+        remain -= i
         cnt += 1
-    while total != z:
+    if remain != 0:
         total += 1
         cnt += 1
 
