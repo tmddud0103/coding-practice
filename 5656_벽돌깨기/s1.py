@@ -8,7 +8,6 @@ def brickbreak(permu, maptemp):
         return
     temp = 0
     for p in permu:
-        # print(p, temp, maptemp)
         for j in range(h):
             if maptemp[j][p] != 0:
                 if maptemp[j][p] == 1:
@@ -28,7 +27,6 @@ def killbrick(i, j, temp, maptemp):
     maptemp[i][j] = 0
     temp += 1
     while q:
-        # print(q)
         k, a, b = q.pop(0)
         for ni in range(4):
             for kk in range(1, k):
@@ -53,7 +51,6 @@ def gravity(maptemp):
                     if maptemp[k][j] != 0:
                         maptemp[i][j], maptemp[k][j] = maptemp[k][j], maptemp[i][j]
                         break
-    # print('temp', maptemp)
     return maptemp
 
 
