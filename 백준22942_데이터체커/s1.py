@@ -8,7 +8,7 @@ def circle(p, r):
         return 'No'
     return 'Yes'
 
-n = int(sys.stdin.readline().lstrip())
+n = int(sys.stdin.readline().rstrip())
 
 st = [0]*2000001
 for i in range(n):
