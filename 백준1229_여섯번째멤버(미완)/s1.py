@@ -26,6 +26,7 @@ for tc in range(1, TC + 1):
     N1 = N
     pre_bb(N)
     pre_bb1 = pre_bb2[:]
+    print(pre_bb1)
     while N != 0:
         if pre_bb2[-1] <= N:
             N -= pre_bb2[-1]
